@@ -1,13 +1,13 @@
 <?php
 	
-	class Extension_CleanerURLParams extends Extension {
+	class Extension_CleanURLParams extends Extension {
 	/*-------------------------------------------------------------------------
 		Definition:
 	-------------------------------------------------------------------------*/
 		
 		public function about() {
 			return array(
-				'name'			=> 'Cleaner URL Params',
+				'name'			=> 'Clean URL Params',
 				'version'		=> '1.0.0',
 				'release-date'	=> '2009-03-24',
 				'author'		=> array(
