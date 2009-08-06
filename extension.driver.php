@@ -8,8 +8,8 @@
 		public function about() {
 			return array(
 				'name'			=> 'Clean URL Params',
-				'version'		=> '1.0.0',
-				'release-date'	=> '2009-03-24',
+				'version'		=> '1.0.1',
+				'release-date'	=> '2009-08-06',
 				'author'		=> array(
 					'name'			=> 'Rowan Lewis',
 					'website'		=> 'http://pixelcarnage.com/',
@@ -34,7 +34,13 @@
 	-------------------------------------------------------------------------*/
 		
 		public function frontendPrePageResolve(&$context) {
+			if (is_null($context['page'])) return;
+			
 			$context['page'] = preg_replace_callback('~/([^:/]+):([^/]+)~i', array($this, 'replaceParam'), $context['page']);
+			
+			if (trim($context['page'], '/') == '') {
+				$context['page'] = null;
+			}
 		}
 		
 		public function replaceParam($data) {
