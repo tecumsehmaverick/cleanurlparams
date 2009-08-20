@@ -47,6 +47,7 @@
 			if (count($data) != 3) return $data[0];
 			
 			$_GET[$data[1]] = $data[2];
+			$_REQUEST[$data[1]] = $data[2];
 			
 			return '';
 		}
