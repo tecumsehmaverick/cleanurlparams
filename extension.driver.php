@@ -8,12 +8,12 @@
 		public function about() {
 			return array(
 				'name'			=> 'Clean URL Params',
-				'version'		=> '1.0.1',
-				'release-date'	=> '2009-08-06',
+				'version'		=> '1.0.2',
+				'release-date'	=> '2009-12-09',
 				'author'		=> array(
 					'name'			=> 'Rowan Lewis',
-					'website'		=> 'http://pixelcarnage.com/',
-					'email'			=> 'rowan@pixelcarnage.com'
+					'website'		=> 'http://rowanlewis.com/',
+					'email'			=> 'me@rowanlewis.com'
 				),
 				'description'	=> 'Allows you to use /key:value/ instead of ?key=value in URLs.'
 			);
